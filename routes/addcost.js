@@ -12,7 +12,7 @@ router.post('/', function (req, res) {
 
         // If there's an error, respond with a server error message
         if (error) {
-            res.status(500).json({ message: 'Server Error: Unable to find user', error: error});
+            res.status(500).json({ 'message': 'Server Error: Unable to find user', 'error': error});
         }
         // If the user doesn't exist, respond with a client error message
         else if (!user) {
